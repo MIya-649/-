@@ -1,10 +1,7 @@
 package curriculum_B;
 
 public class Question2 {
-
-	/**
-	 * @param args
-	 */
+	
 	public static void main(String[] args) {
 		
 		// Q1 int型変数scoreを宣言
@@ -125,7 +122,7 @@ public class Question2 {
 		
 		// Q10 int型の変数monthを宣言
 		int month = 1; // monthに1～12の数を代入
-		switch(month) { // monthが各条件に当てはまるか判定
+		switch(month) { // monthが下記条件に当てはまるか判定
 		case 1: case 2: case 12: // 代入された数が1,2,12の場合(条件1)
 			System.out.println("冬"); // 条件1が正しければ"冬"と表示
 			break;
@@ -142,11 +139,6 @@ public class Question2 {
 			System.out.println("無効な月です"); // 無効な月ですと表示
 			
 		}
-		
-		
-		
-		
-		
 		
 	}
 
