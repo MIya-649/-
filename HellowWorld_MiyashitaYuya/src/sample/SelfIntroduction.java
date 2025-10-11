@@ -3,15 +3,15 @@ package sample;
 public class SelfIntroduction {
 	
 	public static void main(String[] args) {
-		//氏名
+		// 氏名
 		String name = "宮下 侑也";
-		//年齢
+		// 年齢
 		int age = 29;
-		//趣味
+		// 趣味
 		String hobby = "バイク";
 		
 		/*
-		*自己紹介を出力する処理
+		* 自己紹介を出力する処理
 		*/
 		 
 		System.out.println("私の名前は" + name + " です");
