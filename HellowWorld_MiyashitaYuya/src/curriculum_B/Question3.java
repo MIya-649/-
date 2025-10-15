@@ -104,18 +104,18 @@ public class Question3 {
 		System.out.println(); // 空白行
 		
 		
-		Random rand = new Random();
-		Scanner scannerA = new Scanner(System.in);
+		Random rand = new Random(); // Q12 ランダムクラス宣言
+		Scanner scannerA = new Scanner(System.in); 
 		int tvStock = rand.nextInt(11) + 1;  // テレビの残り台数を先に決める
 
 		System.out.println("商品名を入力してください:");
 		String inputLine = scannerA.nextLine();
 		String[] inputProducts = inputLine.split("、|,"); // カンマまたは全角カンマで分割
 		
-		for (String product : inputProducts) {
-			product = product.trim();
+		for (String product : inputProducts) { 
+			product = product.trim(); // productの前後の空白を消す
 			String output;
-			switch (product) {
+			switch (product) {  // パソコン～加湿器までは同じ処理0~11までの数字がランダムで出力
 				case "パソコン":
 				case "冷蔵庫":
 				case "扇風機":
@@ -124,14 +124,14 @@ public class Question3 {
 					int stock = rand.nextInt(11) + 1;
 					output = product + "の残り台数は" + stock + "台です";
 					break;
-				case "テレビ":
+				case "テレビ": // テレビとディスプレイは同じ商品として扱う、合計値が11になるように
 				case "ディスプレイ":
 					 output = (product.equals("テレビ")
 						? "テレビの残り台数は" + tvStock + "台です。\nディスプレイの残り台数は" + (11 - tvStock) + "台です。"
 						: "ディスプレイの残り台数は" + (11 - tvStock) + "台です。\nテレビの残り台数は" + tvStock + "台です。");
 					 break;
 				default:
-					output ="『"+ product +"』" + "指定の商品ではありません";
+					output ="『"+ product +"』" + "指定の商品ではありません"; 
 					break;
 				}
 			System.out.println(output);
