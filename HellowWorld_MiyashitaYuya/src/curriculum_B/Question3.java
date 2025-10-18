@@ -137,6 +137,7 @@ public class Question3 {
 			System.out.println(output);
 		}
 		scannerA.close();
+		scanner1.close();
 	}
 }	
 
