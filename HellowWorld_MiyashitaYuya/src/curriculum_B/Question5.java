@@ -2,7 +2,7 @@ package curriculum_B;
 
 public class Question5 {
 	
-	public static void helleWorld() { // Holle,Worldを表示するメソッド
+	public static void helloWorld() { // Holle,Worldを表示するメソッド
 		System.out.println("Hello,World!");
 	}
 	
@@ -20,14 +20,14 @@ public class Question5 {
 	public static void main(String[] args) {
 	
 		// Q1 実行例
-		helleWorld();
+		helloWorld();
 		System.out.println(); //空白行
 		
 		
 		// Q2 実行例
 		int num = 10;
-		int doubuled = doubleValue(num);
-		System.out.println(doubuled);
+		int doubled = doubleValue(num);
+		System.out.println(doubled);
 		System.out.println(); //空白行
 		
 		

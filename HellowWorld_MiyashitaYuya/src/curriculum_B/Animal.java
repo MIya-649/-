@@ -2,9 +2,9 @@ package curriculum_B;
 
 public class Animal {
 
-	private String name;
-	private double height;
-	private double speed;
+	public String name;
+	public double height;
+	public double speed;
 	
 	// 動物の名前(name)のgetterとsetterを定義
 	public String getName() { 
