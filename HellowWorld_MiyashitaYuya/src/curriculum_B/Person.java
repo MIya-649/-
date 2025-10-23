@@ -21,12 +21,11 @@ public class Person {
 	}
 	
 	public void print() {
-		Person t = (Person)this;
-		System.out.println("名前は" + t.name + "です");
-		System.out.println("年齢は" + t.age + "です");
-		System.out.println("BMIは" + String.format("%.2f",t.bmi()) +"です");
+		System.out.println("名前は" + name + "です");
+		System.out.println("年齢は" + age + "です");
+		System.out.println("BMIは" + String.format("%.2f",bmi()) +"です");
 	}
-	static public void printcount() {
+	static public void printCount() {
 		System.out.println("合計人数は"+ count +"人です");
 	}
 	

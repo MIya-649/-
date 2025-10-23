@@ -11,7 +11,7 @@ public class Main_A {
 		// System.out.println(person1.height);	
 		
 		person1.print();
-		Person.printcount();
+		Person.printCount();
 
 
 	}
