@@ -14,7 +14,7 @@ public class Main {
 				
 		for(Employee emp : employeeList) {
 			int wage = emp.calculateDailyWage(9); // 正社員とパート社員の勤務時間
-			System.out.println(emp.id + emp.name + "の給与:" + wage + "円"); 
+			System.out.println(emp.getEmployeeId() + emp.getName() + "の給与:" + wage + "円"); 
 		}
 	}
 

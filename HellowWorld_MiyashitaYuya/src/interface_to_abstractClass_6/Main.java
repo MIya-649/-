@@ -14,7 +14,7 @@ public class Main {
 		int hours = 9;
 		for (Billable emp : employees) {
 			Employee e = (Employee)emp; // 社員情報の呼び出し
-			System.out.println(e.getId() + ":" + e.getName() + "の給与:" + emp.costForDay(hours) + "円");
+			System.out.println(e.getEmployeeId() + ":" + e.getName() + "の給与:" + emp.costForDay(hours) + "円");
 		}
 	}
 
