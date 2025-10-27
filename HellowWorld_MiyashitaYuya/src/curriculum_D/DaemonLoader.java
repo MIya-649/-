@@ -9,7 +9,7 @@ public class DaemonLoader {
 	// パッケージ内のファイルからステータスを読み込み
 	public static Character loadFromFile(String filename) throws Exception{
 		// パッケージ内からファイルの取得
-		InputStream is = Question7.class.getResourceAsStream(filename);
+		InputStream is = DaemonLoader.class.getResourceAsStream(filename);
 		// 見つからない場合はエラー
 		if(is == null) {
 			throw new FileNotFoundException("Resource not found:" + filename);
